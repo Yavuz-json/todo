@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    margin: 100px auto auto auto;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.marked {
+    filter: grayscale(100%);
+    opacity: 50%;
+}
+
+.marked .title {
+    text-decoration: line-through;
+}
+
+.titleInput {
+    width: 100%;
+    border: 0;
+    font-size: 17px;
+    border-bottom: 2px solid gray;
+    outline: none;
+    margin-bottom: 12px;
+    padding: 3px 10px;
+    box-sizing: border-box;
+}
+
+.titleInput:hover,
+.dateTimePicker:hover {
+    background-color: rgba(224, 224, 224, 0.301);
+}
+
+.dateTimePicker {
+    margin-left: 10px;
+    height: 20px;
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    border: 0;
+    color: aliceblue;
+    font-size: 15px;
+    margin-top: 17px;
+    padding: 10px 0;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.add {
+    background: rgb(20, 138, 216);
+    width: 75%;
+}
+
+.destroy {
+    background: rgb(221, 0, 0);
+    width: 22%;
+}
+
+.todoItem {
+    margin: 20px 0;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.date {
+    font-size: 14px;
+    margin: 0;
+}
+
+.createdDate {
+    color: gray;
+    font-size: 13px;
+    margin: 0;
+}
+
+.checkBox {
+    float: right;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(0, 45, 247);
+    transition: 1s;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        margin: 0 auto auto auto;
+    }
+
+    .dateTimePicker {
+        margin-top: 10px;
+    }
+}
